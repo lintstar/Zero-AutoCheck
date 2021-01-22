@@ -23,7 +23,7 @@
 
 **因为零组的登录界面涉及到验证码**
 
-![20210122181325.png](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
+![Zero](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
 
 **需要一个验证码识别接口：**
 
@@ -63,7 +63,7 @@
 
 **通知效果**
 
-![image-20210122204759618](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122204759.png)
+![image-20210122204759618](https://qiniuyun.lintstar.top/hexo/20210122204759.png)
 
 ## 签到失败通知
 
