@@ -17,13 +17,15 @@
 
 > 文库的权限是随着时间线进行推进的，也就是说即使一直是0分，也会在时间线的推进下自动递增可浏览的文章。
 
-**所以就需要一个签到脚本啦**
+**所以就需要一个签到脚本啦 ~**
+
+**详见：[Python 实现自动登录签到及微信通知](https://www.lintstar.top/2021/01/5bf799f.html)**
 
 # 验证码识别
 
 **因为零组的登录界面涉及到验证码**
 
-![Zero](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
+![20210122181325.png](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
 
 **需要一个验证码识别接口：**
 
@@ -40,6 +42,25 @@
 **这种简单的验证码准确度还是很不错的：**
 
 ![image-20210122182317193](https://qiniuyun.lintstar.top/hexo/20210122182317.png)
+
+# Server 酱
+
+**Python3 测试脚本：**
+
+```python
+# coding=utf-8
+import requests
+
+key = "" # Server 酱的SCKEY
+url = "https://sc.ftqq.com/%s.send"%(key)
+headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'}
+payload = {'text': 'Server 酱提醒', 'desp': 'Python 用 Server 酱推送微信模板消息'}
+requests.post(url, params=payload, headers=headers)
+```
+
+**复制SCKEY：**
+
+![image-20210122235416805](https://qiniuyun.lintstar.top/hexo/20210122235416.png)
 
 # 自动签到脚本
 
@@ -71,5 +92,10 @@
 
 ## 签到成功效果
 
-![image-20210122204857759](https://qiniuyun.lintstar.top/hexo/20210122204857.png)
+**每日首次签到通知**
 
+![image-20210123001123289](https://qiniuyun.lintstar.top/hexo/20210123001123.png)
+
+**重复签到通知**
+
+![image-20210122204857759](https://qiniuyun.lintstar.top/hexo/20210122204857.png)
