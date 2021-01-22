@@ -17,13 +17,13 @@
 
 > 文库的权限是随着时间线进行推进的，也就是说即使一直是0分，也会在时间线的推进下自动递增可浏览的文章。
 
-**所以就需要一个签到脚本啦 ~**
+**所以就需要一个签到脚本啦**
 
 # 验证码识别
 
 **因为零组的登录界面涉及到验证码**
 
-![](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122181325.png)
+![20210122181325.png](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
 
 **需要一个验证码识别接口：**
 
@@ -31,7 +31,7 @@
 
 ## 价格
 
-![image-20210122181937953](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122181937.png)
+![image-20210122181937953](https://qiniuyun.lintstar.top/hexo/20210122181937.png)
 
 **流量包完全没必要 1块500次可以用好久**
 
@@ -39,13 +39,13 @@
 
 **这种简单的验证码准确度还是很不错的：**
 
-![image-20210122182317193](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122182317.png)
+![image-20210122182317193](https://qiniuyun.lintstar.top/hexo/20210122182317.png)
 
 # 自动签到脚本
 
 **脚本改自：**
 
-![image-20210122202435193](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122202435.png)
+![image-20210122202435193](https://qiniuyun.lintstar.top/hexo/20210122202435.png)
 
 **添加了 Server 酱微信通知功能 方便每天接收通知**
 
@@ -53,11 +53,11 @@
 
 **在 ① ② 处填入 [图鉴](http://www.ttshitu.com/) 的账号密码 ③ 处填入 [Server 酱](http://sc.ftqq.com/?c=code) 的 SCKEY**
 
-![image-20210122203901971](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122203901.png)
+![image-20210122203901971](https://qiniuyun.lintstar.top/hexo/20210122203901.png)
 
 **④ ⑤ 处分别填入 [零组文库](https://wiki.0-sec.org/#/login) 的账号密码**
 
-![image-20210122204419293](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122204419.png)
+![image-20210122204419293](https://qiniuyun.lintstar.top/hexo/20210122204419.png)
 
 # 脚本效果
 
@@ -67,9 +67,9 @@
 
 ## 签到失败通知
 
-![image-20210122204838079](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122204838.png)
+![image-20210122204838079](https://qiniuyun.lintstar.top/hexo/20210122204838.png)
 
 ## 签到成功效果
 
-![image-20210122204857759](/Users/lintstar/Files/Program/Zero-AutoCheck/img/20210122204857.png)
+![image-20210122204857759](https://qiniuyun.lintstar.top/hexo/20210122204857.png)
 
