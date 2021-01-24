@@ -17,7 +17,7 @@
 
 > 文库的权限是随着时间线进行推进的，也就是说即使一直是0分，也会在时间线的推进下自动递增可浏览的文章。
 
-**所以就需要一个签到脚本啦 ~**
+**所以就需要一个签到脚本啦~**
 
 **详见：[Python 实现自动登录签到及微信通知](https://www.lintstar.top/2021/01/5bf799f.html)**
 
@@ -25,7 +25,7 @@
 
 **因为零组的登录界面涉及到验证码**
 
-![20210122181325.png](https://qiniuyun.lintstar.top/hexo/20210122181325.png)
+![20210124_1159](https://qiniuyun.lintstar.top/hexo/20210124120235.webp)
 
 **需要一个验证码识别接口：**
 
@@ -99,3 +99,57 @@ requests.post(url, params=payload, headers=headers)
 **重复签到通知**
 
 ![image-20210122204857759](https://qiniuyun.lintstar.top/hexo/20210122204857.png)
+
+# VPS Crontab
+
+1. **新建文件夹**
+
+   ```bash
+   mkdir Auto
+   cd Auto
+   ```
+
+2. **下载脚本**
+
+   ```bash
+   wget https://github.com/lintstar/Zero-AutoCheck/releases/download/1.0/Zero-AutoCheck.py
+   ```
+
+3. **替换自己的账号密码和 SCKEY**
+
+   ```bash
+   vim Zero-AutoCheck.py
+   ```
+
+4. **安装 Python3.6**
+
+   ```bash
+   yum -y install python36
+   ```
+
+5. **添加定时任务**
+
+   ```bash
+   crontab -e
+   ```
+
+6. **新增 每天9点20执行脚本**
+
+   ```bash
+   20 9 * * * /usr/bin/python3 /root/Auto/Zero_AutoCheck.py
+   ```
+
+7. **保存退出**
+
+# 运行效果
+
+![image-20210124120619040](https://qiniuyun.lintstar.top/hexo/20210124120619.png)
+
+## 每天 3 积分 ~
+
+![image-20210124120643281](https://qiniuyun.lintstar.top/hexo/20210124120643.png)
+
+> 测试时候出现了几次签到成功却没有通知到微信的情况，是因为方糖近期服务器稳定性的问题：
+
+![image-20210124120920691](https://qiniuyun.lintstar.top/hexo/20210124120920.png)
+
