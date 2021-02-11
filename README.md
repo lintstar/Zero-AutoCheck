@@ -136,7 +136,7 @@ requests.post(url, params=payload, headers=headers)
 6. **新增 每天9点20执行脚本**
 
    ```bash
-   20 9 * * * /usr/bin/python3 /root/Auto/Zero_AutoCheck.py
+   20 9 * * * /usr/bin/python3 /root/Auto/Zero-AutoCheck.py
    ```
 
 7. **保存退出**
